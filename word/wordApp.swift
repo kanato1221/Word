@@ -12,6 +12,7 @@ struct wordApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: Word.self)
         }
     }
 }

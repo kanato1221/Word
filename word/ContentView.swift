@@ -26,6 +26,17 @@ struct ContentView: View {
                         .background(Color.orange)
                         .clipShape(.capsule)
                 }
+                NavigationLink{
+                    WordListView()
+                }label:{
+                    Text("単語帳")
+                        .font(.title)
+                        .foregroundStyle(.white)
+                        .padding(.vertical ,12)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.orange)
+                        .clipShape(.capsule)
+                }
             }
             .padding(.horizontal, 60)
         }
